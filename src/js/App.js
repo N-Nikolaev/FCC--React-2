@@ -1,9 +1,10 @@
 import React from 'react'
+import Editor from './components/Editor'
 
 const App = () => {
     return (
         <div className='app'>
-            <h1>Test</h1>
+            <Editor />
         </div>
     )
 }
