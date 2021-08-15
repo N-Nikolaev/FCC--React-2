@@ -4,8 +4,8 @@
   "description": "Free Code Camp (Front End Libraries): Markdown Previewer",
   "main": "index.js",
   "scripts": {
-    "start" : "parcel src/index.html",
-    "build" : "del /f /q docs && build src/index.html -d docs --public-url ."
+    "start": "parcel src/index.html",
+    "build": "del /f /q docs && build src/index.html -d docs --public-url ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/N-Nikolaev/FCC--React-2#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
