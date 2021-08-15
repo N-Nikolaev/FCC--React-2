@@ -1,17 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Editor from './components/Editor'
 import Previewer from './components/Previewer'
 
 const App = () => {
+    const readmePath = require("../assets/README.txt"); // Had to create a text copy for the raw README.md
+    const [markdown, setMarkdown] = useState('')
 
-    const exampleMarkdown = `
-# Welcome to my React Markdown Previewer!
+    const fetchREADME = useCallback(() => {
+        fetch(readmePath)
+            .then(res => res.text())
+            .then(text => setMarkdown(text))
+            .catch(err => console.log(err))
+    })
 
-## This is a sub-heading...
-### And here's some other cool stuff:
-    `
-
-    const [markdown, setMarkdown] = useState(exampleMarkdown)
+    useEffect(() => {
+        fetchREADME();
+    },[])
 
     return (
         <main className='app'>

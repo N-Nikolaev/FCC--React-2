@@ -7,7 +7,6 @@ const Previewer = ({ markdown }) => {
     const cleanMarkdown = markdown => {
         const sanitizer = DOMPurify.sanitize;
         const sanitizedMarkdown = sanitizer(marked(markdown, {breaks: true}));
-        console.log(sanitizedMarkdown)
         return { __html: sanitizedMarkdown || '' };
     }
 
