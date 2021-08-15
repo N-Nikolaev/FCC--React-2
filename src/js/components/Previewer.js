@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import marked from 'marked'
 import DOMPurify from 'dompurify'
+import Prism from 'prismjs'
+import "../../scss/prism.css"
 
 const Previewer = ({ markdown }) => {
 
     const cleanMarkdown = markdown => {
         const sanitizer = DOMPurify.sanitize;
-        const sanitizedMarkdown = sanitizer(marked(markdown, {breaks: true}));
+                
+        marked.setOptions({
+            breaks: true,
+            highlight: function (code) {
+                return Prism.highlight(code, Prism.languages.javascript, 'javascript')
+            }
+        });
+
+        const sanitizedMarkdown = sanitizer(marked(markdown));
         return { __html: sanitizedMarkdown || '' };
     }
+
+    useEffect(() => {
+        Prism.highlightAll();
+    })
 
     return (
         <section className="previewer">
