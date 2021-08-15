@@ -5,15 +5,15 @@
 
 // Colors
 
-$color--dark-primary:       hsl(245, 62%, 15%);
-$color--dark-secondary:     hsl(237, 38%, 30%);
-$color--light-primrary:     hsl(184, 78%, 93%);
-$color--light-secondary:    hsl(183, 53%, 86%);
+$color--dark-primary:       hsl(206, 21%, 15%);
+$color--dark-secondary:     hsl(210, 14%, 33%);
+$color--light-primrary:     hsl(210, 22%, 85%);
+$color--light-secondary:    hsl(209, 12%, 55%);
 
-$txt--dark-primary:         hsl(238, 66%, 64%);
-$txt--dark-secondary:       rgb(186, 219, 87);
-$txt--light-primrary:       hsl(214, 11%, 37%);
-$txt--light-secondary:      hsl(32, 87%, 55%);
+$txt--dark-primary:         hsl(152, 91%, 48%);
+$txt--dark-secondary:       hsl(236, 56%, 58%);
+$txt--light-primrary:       hsl(0, 0%, 29%);
+$txt--light-secondary:      hsl(39, 100%, 50%);
 
 
 // Fonts
@@ -21,11 +21,30 @@ $txt--light-secondary:      hsl(32, 87%, 55%);
 $font--source-code:         'Source Code Pro', monospace;
 
 
+// Breakpoints
+
+$br--desktop:   1024px;
+
+
+// Miscellaneous
+
+$border-radius: 4px;
+
+
+// Mixins
+
+
+@mixin mq {
+    @media (min-width: $br--desktop) {
+        @content;
+    }
+}
+
 
 //------------------------------------------------------------//
 
 // Style
 
 body {
-    background-color: $test;
+    background-color: $color--dark-primary;
 }
