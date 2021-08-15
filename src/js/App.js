@@ -15,12 +15,11 @@ const App = () => {
 
     return (
         <main className='app'>
-            <div className="wrapper">
-                <Editor 
-                    markdown={markdown} 
-                    setMarkdown={setMarkdown} />
-                <Previewer markdown={markdown}/>
-            </div>
+            <h1 className='app__name'>Markdown Previewer</h1>
+            <Editor 
+                markdown={markdown} 
+                setMarkdown={setMarkdown} />
+            <Previewer markdown={markdown}/>
         </main>
     )
 }
