@@ -1,5 +1,6 @@
 // Imports
 @import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 // Colors
@@ -14,6 +15,16 @@ $txt--dark-secondary:       rgb(186, 219, 87);
 $txt--light-primrary:       hsl(214, 11%, 37%);
 $txt--light-secondary:      hsl(32, 87%, 55%);
 
+
+// Fonts
+
+$font--source-code:         'Source Code Pro', monospace;
+
+
+
+//------------------------------------------------------------//
+
+// Style
 
 body {
     background-color: $test;
