@@ -45,6 +45,46 @@ $border-radius: 4px;
 
 // Style
 
-body {
-    background-color: $color--light-primary;
+html {  // Temp Theming
+    --color-primary: #{$color--light-primary};
+    --color-secondary: #{$color--light-secondary};
+    --txt-primary: #{$txt--light-primary};
+    --txt-secondary: #{$txt--light-secondary};
 }
+
+html, body {  
+    font-family: $font--source-code;
+    font-weight: 400;
+}
+
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-primary);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "editor" 
+        "preview";
+    grid-gap: 2rem;
+
+    @include mq { grid-template-areas: "editor preview"; }
+}
+
+// .editor {
+    
+// }
+
+// .previewer {
+
+// }
