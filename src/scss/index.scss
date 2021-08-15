@@ -1,4 +1,19 @@
-$test: red;
+// Imports
+@import "normalize.css";
+
+
+// Colors
+
+$color--dark-primary:       hsl(245, 62%, 15%);
+$color--dark-secondary:     hsl(237, 38%, 30%);
+$color--light-primrary:     hsl(184, 78%, 93%);
+$color--light-secondary:    hsl(183, 53%, 86%);
+
+$txt--dark-primary:         hsl(238, 66%, 64%);
+$txt--dark-secondary:       rgb(186, 219, 87);
+$txt--light-primrary:       hsl(214, 11%, 37%);
+$txt--light-secondary:      hsl(32, 87%, 55%);
+
 
 body {
     background-color: $test;
