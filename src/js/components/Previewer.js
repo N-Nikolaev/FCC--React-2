@@ -3,19 +3,19 @@ import marked from 'marked'
 import DOMPurify from 'dompurify'
 
 const Previewer = ({ markdown }) => {
-    // Temp markdown display
 
     const cleanMarkdown = markdown => {
         const sanitizer = DOMPurify.sanitize;
         const sanitizedMarkdown = sanitizer(marked(markdown));
-        return { __html: sanitizedMarkdown };
+        console.log(sanitizedMarkdown)
+        return { __html: sanitizedMarkdown || 'No Markdown :C' };
     }
 
     return (
         <div 
             id="preview" 
             className="previewer"
-            dangerouslySetInnerHTML={ markdown ? cleanMarkdown(markdown) : 'No Markdown :C'} /> 
+            dangerouslySetInnerHTML={cleanMarkdown(markdown)} /> 
     )
 }
 
