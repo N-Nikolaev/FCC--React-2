@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Editor = () => {
+const Editor = ({ markdown, setMarkdown }) => {
     return (
         <textarea 
             className='editor'
-            placeholder='Placeholder Text'></textarea>
+            value={markdown}
+            onChange={e => setMarkdown(e.target.value)}></textarea>
     )
 }
 

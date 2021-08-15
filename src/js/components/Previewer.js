@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Previewer = () => {
+const Previewer = ({ markdown }) => {
+    // Temp markdown display
     return (
-        <div>
-            Temp text
+        <div> 
+            { markdown ? markdown : 'No Markdown :C'} 
         </div>
     )
 }
