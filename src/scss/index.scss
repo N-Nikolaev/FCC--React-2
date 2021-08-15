@@ -76,7 +76,9 @@ html, body {
     grid-template-areas: 
         "editor" 
         "preview";
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+    max-width: 1000px;
 
     @include mq { grid-template-areas: "editor preview"; }
 }
@@ -85,6 +87,10 @@ html, body {
     
 // }
 
-// .previewer {
+.previewer {
+    padding: 1rem;
 
-// }
+    background-color: var(--color-secondary);
+
+    overflow: auto;
+}
