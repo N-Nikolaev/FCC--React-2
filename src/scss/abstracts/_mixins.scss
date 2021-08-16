@@ -10,6 +10,7 @@
     --color-primary: #{map-get($theme, "primary")};
     --color-secondary: #{map-get($theme, "secondary")};
     --color-code: #{map-get($theme, "code")};
+    --color-accent: #{map-get($theme, "accent")};
     --txt-primary: #{map-get($theme, "textPrimary")};
     --txt-secondary: #{map-get($theme, "textSecondary")};
 }

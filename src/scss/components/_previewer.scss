@@ -17,7 +17,9 @@
         grid-template-columns: auto fit-content(100%);
         grid-column-gap: auto;
         padding-left: 1rem;
+
         border-bottom: 1px solid var(--color-secondary);
+        background-color: var(--color-primary);
     }
 
     &__title {
@@ -32,6 +34,8 @@
         padding: 1rem;
         
         color: var(--txt-primary);
+
+        background-color: var(--color-primary);
 
         overflow: auto;
 
@@ -57,7 +61,6 @@
             padding: .2rem;
 
             border-radius: 4px;
-            background-color: var(--color-code);
 
             overflow: auto;
         }
@@ -121,8 +124,10 @@
 
         li {  margin-bottom: .5rem; }
 
+        li::marker { color: var(--txt-secondary); }
+
         img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
         }
     }

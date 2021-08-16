@@ -5,6 +5,7 @@
 $primary--dark:             hsl(206, 21%, 15%);
 $secondary--dark:           hsl(210, 14%, 33%);
 $code--dark:                hsl(210, 14%, 20%);
+$accent--dark:              hsl(48, 100%, 67%);
 
 $txt-primary--dark:         hsl(152, 91%, 48%);
 $txt-secondary--dark:       hsl(236, 56%, 58%);
@@ -13,6 +14,7 @@ $dark: (
     primary:                $primary--dark,
     secondary:              $secondary--dark,
     code:                   $code--dark,
+    accent:                 $accent--dark,
     textPrimary:            $txt-primary--dark,
     textSecondary:          $txt-secondary--dark,
 );
@@ -23,6 +25,7 @@ $dark: (
 $primary--light:            hsl(0, 0%, 100%);
 $secondary--light:          hsl(208, 22%, 85%);
 $code--light:               hsl(210, 22%, 92%);
+$accent--light:             hsl(236, 56%, 58%);
 
 $txt-primary--light:        hsl(206, 21%, 15%);
 $txt-secondary--light:      hsl(208, 12%, 55%);
@@ -31,6 +34,7 @@ $light: (
     primary:                $primary--light,
     secondary:              $secondary--light,
     code:                   $code--light,
+    accent:                 $accent--light,
     textPrimary:            $txt-primary--light,
     textSecondary:          $txt-secondary--light,
 );

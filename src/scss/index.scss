@@ -5,6 +5,7 @@
 @use 'components/app';
 @use 'components/editor';
 @use 'components/previewer';
+@use 'components/themeToggle';
 
 body {  
     font-family: fonts.$primary;

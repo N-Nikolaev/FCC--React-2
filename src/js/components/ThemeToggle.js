@@ -7,8 +7,8 @@ const ThemeToggle = () => {
 
     useEffect(()=> {
         isDarkTheme 
-        ? document.body.dataset.theme = "light"
-        : document.body.dataset.theme = "dark"
+        ? document.body.dataset.theme = "dark"
+        : document.body.dataset.theme = "light"
     }, [isDarkTheme])
 
     const toggleDark = () => { setIsDarkTheme(!isDarkTheme) }
