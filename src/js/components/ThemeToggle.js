@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 
 const ThemeToggle = () => {
-    const [ isDarkTheme, setIsDarkTheme ] = useState(true)
+    const [ isDarkTheme, setIsDarkTheme ] = useState(false)
 
     useEffect(()=> {
         isDarkTheme 
