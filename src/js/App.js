@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import Editor from './components/Editor'
-import Previewer from './components/Previewer'
+import Editor from '/js/components/Editor'
+import Previewer from '/js/components/Previewer'
 
 const App = () => {
     const readmePath = require("../assets/README.txt"); // Had to create a text copy for the raw README.md

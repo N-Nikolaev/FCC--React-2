@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import marked from 'marked'
 import DOMPurify from 'dompurify'
 import Prism from 'prismjs'
-import "../../scss/prism.css"
+import "/scss/prism.css"
 
 const Previewer = ({ markdown }) => {
 
