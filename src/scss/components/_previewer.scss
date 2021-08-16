@@ -1,3 +1,4 @@
+@use 'abstracts/mixins' as *;
 @use 'abstracts/fonts';
 
 
@@ -9,6 +10,12 @@
     color: var(--txt-primary);
 
     border: 1px solid var(--color-secondary);
+    border-left: none;
+    border-right: none;
+
+    @include media-query {
+        border-left: 1px solid var(--color-secondary);
+    }
 
     overflow: auto;
 
