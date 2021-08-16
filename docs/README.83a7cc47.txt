@@ -39,21 +39,21 @@ Users should be able to:
 **Desktop View**
 > Light theme
 
-![](src/assets/screenshot-desktop-light.png)
+![](https://raw.githubusercontent.com/N-Nikolaev/FCC--React-2/main/src/assets/screenshot-desktop-light.png)
 
 > Dark theme
 
-![](src/assets/screenshot-desktop-dark.png)
+![](https://raw.githubusercontent.com/N-Nikolaev/FCC--React-2/main/src/assets/screenshot-desktop-dark.png)
 
 **Mobile View**
 
 > Light theme
 
-![](src/assets/screenshot-mobile-light.png)
+![](https://raw.githubusercontent.com/N-Nikolaev/FCC--React-2/main/src/assets/screenshot-mobile-light.png)
 
 > Dark theme
 
-![](src/assets/screenshot-mobile-dark.png)
+![](https://raw.githubusercontent.com/N-Nikolaev/FCC--React-2/main/src/assets/screenshot-mobile-dark.png)
 
 ### Links
 
