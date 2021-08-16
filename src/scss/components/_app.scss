@@ -1,0 +1,41 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/fonts';
+
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: grid;
+    grid-template-rows: fit-content(100%) 1fr 1fr;
+    grid-template-areas: 
+        "name"
+        "editor" 
+        "preview";
+
+    background-color: var(--color-primary);
+
+    @include media-query {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content(100%) auto;
+        grid-template-areas: 
+        "name name"
+        "editor preview";
+    }
+
+    &__name {
+        grid-area: name;
+        margin: 0;
+        padding: 1rem;
+
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: right;
+        color: var(--txt-primary);
+
+        background-color: var(--color-primary);
+    }
+}

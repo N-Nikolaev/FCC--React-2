@@ -1,0 +1,9 @@
+@use 'vars';
+
+// Media Query
+
+@mixin media-query {
+    @media (min-width: vars.$large) {
+        @content;
+    }
+}
