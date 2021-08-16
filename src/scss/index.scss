@@ -6,20 +6,16 @@
 @use 'components/editor';
 @use 'components/previewer';
 
+body {  
+    font-family: fonts.$primary;
+    font-weight: fonts.$light;
 
-html { 
     &, 
     &[data-theme="light"] { @include theme($light); }
 
     &[data-theme="dark"] { @include theme($dark); }
 }
 
-body {  
-    font-family: fonts.$primary;
-    font-weight: fonts.$light;
-}
-
-// Add dark / light mode toggle + theming
 // Update favicons
 // Add screenshots
 // Update README

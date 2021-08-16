@@ -1,19 +1,26 @@
-import React, { useState } from 'react'
-import { FontAwesomeIcon, faMoon } from '@fortawesome/react-fontawesome'
+import React, { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 
 const ThemeToggle = () => {
-    const [ theme, setTheme ] = useState('light')
+    const [ isDarkTheme, setIsDarkTheme ] = useState(true)
 
+    useEffect(()=> {
+        isDarkTheme 
+        ? document.body.dataset.theme = "light"
+        : document.body.dataset.theme = "dark"
+    }, [isDarkTheme])
 
+    const toggleDark = () => { setIsDarkTheme(!isDarkTheme) }
 
     return (
-        <div>
-            <button className="themeToggle">
-                <FontAwesomeIcon
-                    icon={faMoon}
-                    size='2x' />
-            </button>
-        </div>
+        <button 
+            className="themeToggle"
+            onClick={toggleDark}>
+            <FontAwesomeIcon
+                icon={isDarkTheme ? faSun : faMoon}
+                size='2x' />
+        </button>
     )
 }
 

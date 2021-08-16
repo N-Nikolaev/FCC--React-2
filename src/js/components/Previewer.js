@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import ThemeToggle from '/js/components/ThemeToggle'
 import marked from 'marked'
 import DOMPurify from 'dompurify'
 import Prism from 'prismjs'
@@ -28,6 +29,7 @@ const Previewer = ({ markdown }) => {
         <section className="previewer">
             <header className="previewer__header">
                 <h2 className="previewer__title">Preview</h2>
+                <ThemeToggle />
             </header>
             <div 
                 id="preview" 
