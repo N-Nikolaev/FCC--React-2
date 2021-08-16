@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "del /f /q docs && build src/index.html -d docs --public-url ."
+    "build": "del /f /q docs && parcel build src/index.html -d docs --public-url ."
   },
   "repository": {
     "type": "git",
