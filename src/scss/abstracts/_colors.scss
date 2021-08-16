@@ -1,3 +1,5 @@
+
+
 // Dark Theme
 
 $primary--dark:             hsl(206, 21%, 15%);
@@ -7,12 +9,28 @@ $code--dark:                hsl(210, 14%, 20%);
 $txt-primary--dark:         hsl(152, 91%, 48%);
 $txt-secondary--dark:       hsl(236, 56%, 58%);
 
+$dark: (
+    primary:                $primary--dark,
+    secondary:              $secondary--dark,
+    code:                   $code--dark,
+    textPrimary:            $txt-primary--dark,
+    textSecondary:          $txt-secondary--dark,
+);
+
 
 // Light Theme
 
 $primary--light:            hsl(0, 0%, 100%);
-$secondary--light:          hsl(210, 22%, 85%);
+$secondary--light:          hsl(208, 22%, 85%);
 $code--light:               hsl(210, 22%, 92%);
 
 $txt-primary--light:        hsl(206, 21%, 15%);
-$txt-secondary--light:      hsl(209, 12%, 55%);
+$txt-secondary--light:      hsl(208, 12%, 55%);
+
+$light: (
+    primary:                $primary--light,
+    secondary:              $secondary--light,
+    code:                   $code--light,
+    textPrimary:            $txt-primary--light,
+    textSecondary:          $txt-secondary--light,
+);

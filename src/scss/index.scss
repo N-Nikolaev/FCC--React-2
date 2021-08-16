@@ -1,18 +1,17 @@
 @use 'normalize';
 @use 'abstracts/mixins' as *;
-@use 'abstracts/colors';
+@use 'abstracts/colors' as *;
 @use 'abstracts/fonts';
 @use 'components/app';
 @use 'components/editor';
 @use 'components/previewer';
 
 
-html {  // Temp Theming
-    --color-primary: #{colors.$primary--dark};
-    --color-secondary: #{colors.$secondary--dark};
-    --color-code: #{colors.$code--dark};
-    --txt-primary: #{colors.$txt-primary--dark};
-    --txt-secondary: #{colors.$txt-secondary--dark};
+html { 
+    &, 
+    &[data-theme="light"] { @include theme($light); }
+
+    &[data-theme="dark"] { @include theme($dark); }
 }
 
 body {  
