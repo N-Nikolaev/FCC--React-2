@@ -1,5 +1,5 @@
 # Markdown Previewer
-Free Code Camp (Front End Libraries): Markdown Previewer
+The following application is a markdown previewer that uses the [MarkedJS](https://github.com/markedjs/marked) package to parse and compile markdown and is built using [Parcel](https://parceljs.org/), [Sass](https://sass-lang.com/) and [ReactJS](https://reactjs.org/). 
 
 ## Motivation
 
