@@ -1,4 +1,4 @@
-# markdown-previewer
+# Markdown Previewer
 Free Code Camp (Front End Libraries): Markdown Previewer
 
 ## Motivation
