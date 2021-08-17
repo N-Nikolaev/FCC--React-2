@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/N-Nikolaev/FCC--React-2.git"
+    "url": "git+https://github.com/N-Nikolaev/markdown-previewer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/N-Nikolaev/FCC--React-2/issues"
+    "url": "https://github.com/N-Nikolaev/markdown-previewer/issues"
   },
-  "homepage": "https://github.com/N-Nikolaev/FCC--React-2#readme",
+  "homepage": "https://github.com/N-Nikolaev/markdown-previewer#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.37.5"

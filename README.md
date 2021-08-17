@@ -1,4 +1,4 @@
-# FCC--React-2
+# markdown-previewer
 Free Code Camp (Front End Libraries): Markdown Previewer
 
 ## Motivation
@@ -57,8 +57,8 @@ Users should be able to:
 
 ### Links
 
-- Project URL: [Github Repository](https://github.com/N-Nikolaev/FCC--React-2)
-- Live App URL: [Github Page](https://n-nikolaev.github.io/FCC--React-2)
+- Project URL: [Github Repository](https://github.com/N-Nikolaev/markdown-previewer)
+- Live App URL: [Github Page](https://n-nikolaev.github.io/markdown-previewer)
 
 ### Features
 
@@ -87,7 +87,7 @@ You are going to need the latest version of NPM in order to install this project
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/N-Nikolaev/FCC--React-2.git
+   git clone https://github.com/N-Nikolaev/markdown-previewer.git
    ```
 2. Install NPM packages
    ```sh
