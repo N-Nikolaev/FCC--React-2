@@ -62,8 +62,6 @@ Users should be able to:
 
 ### Features
 
-The design of the project was taken from the sample project provided by Free Code Camp as an example output and includes some features not included with the sample project, these include:
-
 This project was based on the sample project provided by Free Code Camp as an example output and has a number of additional features to distinguish itself from the provided sample output, these include:
 
 - The application was built from scratch using ReactJS
